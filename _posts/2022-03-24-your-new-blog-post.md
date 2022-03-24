@@ -1,6 +1,7 @@
 ## My First Blog Post
 
-![alt text](/images/first-post.jpg)
+![alt text](/images/first-post.png)
+![alt text](/images/first-post-250.png)
 
 I'm learning so much these days and wanted an easy place to store my lessons. I hope to look back on this and either laugh at my early understandings or cry at my dream deferred. We shall see!
 
