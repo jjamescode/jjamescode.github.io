@@ -5,7 +5,8 @@
 Or maybe what you plan to blog about.
 
 [Google](https://www.google.com)
-![smiley_face](/images/myimage.png)
+
+[![smile](/images/myimage.png){: style="width:200px; float:right;"}](https://google.com/)
 
 > Block quote will go here.
 
