@@ -24,6 +24,6 @@ That is so funny! :joy:
     <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
 </figure>
 
-[![Image alt text](/images/youtube-play.jpeg)](https://www.youtube.com/watch?v=GV1BKcgBr18)
+[![Image alt text](/images/youtube-play.jpg)](https://www.youtube.com/watch?v=GV1BKcgBr18)
 
 
