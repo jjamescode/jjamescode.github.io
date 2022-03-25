@@ -1,10 +1,3 @@
-<div class="trigger">
-    <a class="page-link" href="/resume.html">Resume</a><a class="page-link" href="/archive.html">Blog Archive</a>
-    <a class="page-link" href="/books.html">Books</a><a class="page-link" href="/bookmarks.html">Bookmarks</a>
-</div>
-
-
-[About](https://www.google.com)
 ## Here you can say lots of fun things about your site.
 
 ### Maybe say a some things about yourself.
