@@ -1,6 +1,4 @@
----
-layout: default
----
+## Home
 
 ### Maybe say a some things about yourself.
 
@@ -27,8 +25,3 @@ That is so funny! :joy:
 </figure>
 
 [![Image alt text](/images/youtube-play.jpg)](https://www.youtube.com/watch?v=GV1BKcgBr18)
-
-
-
-
-
