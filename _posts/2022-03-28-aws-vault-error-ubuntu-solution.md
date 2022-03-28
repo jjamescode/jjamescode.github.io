@@ -1,7 +1,8 @@
 # AWS-Vault Error Ubuntu Solution
 
 AWS-Vault is a tool used to keep your AWS credentials hidden and secure. 
-![ubuntu-aws-vault-error-solution](/images/ubuntu-aws-vault-error-solution.jpg)
+<img src="/images/ubuntu-aws-vault-error-solution.jpg" alt="ubuntu-aws-vault-error-solution"/>
+
 When you install [AWS CLI tool](https://aws.amazon.com/cli/) from AWS, the default location stores your AWS credentials in plain text. This is dangerous because your credentials can be exposed to outsiders and may result in a huge AWS bill. AWS-Vault to the rescue. 
 
 The installation instructions for installing AWS-Vault on a Linux computer are sparse. In fact they just list one command. There is no documentation to help with errors. So while installing using Homebrew is easy, it's not error free.
