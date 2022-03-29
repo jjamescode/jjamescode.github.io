@@ -1,27 +1,14 @@
 ## Home
 
-### Maybe say a some things about yourself.
+### Welcome!
 
-Or maybe what you plan to blog about.
+<img src="/images/jjames-green.png" alt="my pic" width="200" align="left"/> This blog documents my progress learning Cloud techniques. I am currently AWS & CCNA certified. I enjoy learning tech and love sharing what I learned.
 
-[Google](https://www.google.com)
-
-> Block quote will go here.
-
-**Bold text will go here. **
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-That is so funny! :joy:
-
-<img src="/images/myimage.png" alt="drawing" width="200"/>
-
-<figure>
-    <img src="/images/myimage.png" width="200"
-         alt="Albuquerque, New Mexico">
-    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
-</figure>
-
-[![Image alt text](/images/youtube-play.jpg)](https://www.youtube.com/watch?v=GV1BKcgBr18)
+** Current Skills Include: **
+- Linux
+- Docker
+- Terraform
+- AWS
+- Jenkins
+- Ansible
+- Networking
