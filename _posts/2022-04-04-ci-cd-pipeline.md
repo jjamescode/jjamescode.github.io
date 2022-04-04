@@ -1,14 +1,14 @@
 # Deploy a Simple Website using Nginx, GitLab, Docker, ECR
 The project documents the necessary steps need to launch a simple Nginx webpage using Docker, GitLab Pipelines, Nginx, and ECR. This automation will upload the Docker images to your ECR repository. 
 
-## Steps
-1. Create Project in GitLab. 
-2. Setup AWS
-3. Setup GitLab Pipeline
-4. Setup Local Environment
-5. Create GitLab Yml File Components
+# Contents
+ - [Create Project in GitLab](#i-create-project-in-gitlab) 
+ - [Setup AWS](#ii-setup-aws) 
+ - [Setup GitLab Pipeline](#iii-setup-gitlab-pipeline) 
+ - [Setup Local Environment](#iv-setup-local-environment) 
+ - [Create GitLab Yml Components](#v-create-gitlab-yml-components) 
 
-## II. Create Project in GitLab
+## I. Create Project in GitLab
 **1. Create Project in GitLab.** 
 Set the visibility level to public so your web app is visible to the public.
 <img src="/images/1-create-project-gitlab.PNG" alt="create-gitlab-project" width="500"/>
@@ -91,7 +91,10 @@ git branch
 ```
 
 **8. Create Nginx files**
-Create a index.html and javascript.js page in Visual Code Editor. This simple current time app is simply an index.html page and javascript.js page. You can add whatever you want to those pages. Nginx comes with it's own index.html page that'll you'll need to override via a Dockerfile command. ![alt text](/images/j-time-code.PNG) HTML index page ![alt text](/images/simple-index-page.png)
+Create a index.html and javascript.js page in Visual Code Editor. This simple current time app is simply an index.html page and javascript.js page. You can add whatever you want to those pages. Nginx comes with it's own index.html page that'll you'll need to override via a Dockerfile command. ![alt text](/images/j-time-code.PNG) 
+
+This is the HTML index page. 
+![alt text](/images/simple-index-page.png)
 
 **9. Create a Dockerfile and build the image.** You'll see a success message if your build was completed correctly. ![alt text](/images/docker-file-setup.PNG)
 
