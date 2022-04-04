@@ -155,8 +155,6 @@ Anytime a release job is ran a release tag will be attached and trigger the job 
 
 13. Test Pipeline 
 Commit changes to git and push changes to origin. This should trigger your GitLab pipeline to run. 
-![alt text](/images/3-gitlab-pipeline-build-success.PNG)
-
 *You should get an error message after "git push origin". Simple copy and paste the corrected command that that should push and create your new branch.* 
 
 14. CI/CD > Pipeline
