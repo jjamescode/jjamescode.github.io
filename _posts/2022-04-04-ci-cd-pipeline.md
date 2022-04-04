@@ -155,14 +155,14 @@ Anytime a release job is ran a release tag will be attached and trigger the job 
 
 13. Test Pipeline 
 Commit changes to git and push changes to origin. This should trigger your GitLab pipeline to run. 
-![alt text](images/3-gitlab-pipeline-build-success.PNG)
+![alt text](/images/3-gitlab-pipeline-build-success.PNG)
 
 *You should get an error message after "git push origin". Simple copy and paste the corrected command that that should push and create your new branch.* 
 
 14. CI/CD > Pipeline
 Go to your project in GitLab.com and check out your CI/CD Pipeline to review the newly triggered build stage. (Please note you are charged for build time. You get 400 minutes on free accounts. This build should take about 1 minute).
 
-![alt text](/images/3a-gitlab-merge-push-stage-processing-edit.PNG)
+![alt text](/images/3a-gitlab-merge-push-stage-processing-edit.png)
 
 15. Merge requests > New >Select Source Branch >
 After you get a success message (checkmark), create a merge request to merge the changes into the master select your current branch ("feature) and then select "Compare branches and continue". Here is where you would assign another developer to review your project if you had any. If you don't keep the defaults. Also keep "delete source branch..." selected as this deleted unneeded branches and keeps your pipeline clean. After making changes select "submit merge request".
