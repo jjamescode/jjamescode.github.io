@@ -11,12 +11,12 @@ The project documents the necessary steps need to launch a simple Nginx webpage 
 ## II. Create Project in GitLab
 1. Create Project in GitLab. 
 Set the visibility level to public so your web app is visible to the public.
-![alt text](/images/1-create-project-gitlab.PNG)
+<img src="/images/1-create-project-gitlab.PNG" alt="create-gitlab-project" width="500"/>
 
 2. Change CI/CD Setting in GitLab. 
 Settings > General > Visibility, project features, permissions > Expand > CI/CD > Only Project Members
 - a. Make your CI/CD "Private" and "Only visible to members of the project". By default all CI/CD pipeline logs are set to public. You should set them to private to prevent sensitive information (like your AWS secret key) from accidentally being displayed in logs.
-![alt text](/images/2a-make-pipeline-private.PNG)
+<img src="/images/2a-make-pipeline-private.PNG" alt="make-pipeline-private" width="500"/>
 
 - b. Change CI/CD Settings under General
 CI/CD > General Pipelines > Uncheck Public Pipelines and save.
@@ -33,7 +33,8 @@ In the example below, any branch ending in "release" will be protected. These se
 
 - a. Create Protected Tags
 Tags must also be protected. After setting a tag wildcard, you must limit access to whom gets to create and update tags. Protected tags can also be used to trigger pipeline activation. 
-![alt text](/images/3a-protected-tags/)
+<img src="/images/3a-protected-tags.PNG/" alt="create-protected-tags" width="500"/>
+
 
 4. Clone Project.
 After you have the correct settings, you are now ready to add the project to your local computer. Copy the clone address (ssh version) of your GitLab project and open in your code editor. I used Visual Code Editor. 
@@ -43,7 +44,8 @@ After you have the correct settings, you are now ready to add the project to you
 This project involves using a light Nginx web server packaged into Docker image. Amazon Elastic Container Registry (Amazon ECR) is a service that allows you to store Docker images. It's similar to Docker Hub except that it's located within Amazon and allows you to control IAM policies. 
 
 - a. Create a new registry in AWS ECR. 
-Sign-in to your AWS account and select ECR. Make sure you select the correct region, as ECR repository can be created in multiple locations. It's recommended to name your repository the same name as your project so that it's easier to recognize across your platforms. (/images/4-create-ecr-rep.PNG)
+Sign-in to your AWS account and select ECR. Make sure you select the correct region, as ECR repository can be created in multiple locations. It's recommended to name your repository the same name as your project so that it's easier to recognize across your platforms. 
+<img src="/images/4-create-ecr-rep.PNG/" alt="create-ecr-rep" width="500"/>
 
 - b. Setup IAM User for Pipeline.
 This user will be used by GitLab to push images to the repository. 
@@ -55,7 +57,7 @@ Create a policy to limit the amount of access the user has. This policy states t
 After you create the policy, you'll need a user to attach the policy to it. This computer based user only needs programmatic access. This means this user will never be able to log into the console. Name this user simple-app-ci or whatever reminds you this is a programmatic user only. (/images/5-Create-User.PNG)
 
 - e. Attach Policy to User
-Click on "filter" to quickly find your newly created policy. Select the correct policy and click next. Add tags if needed and review user details. If correct select create user. Keep this page open as you'll need security credentials of this user to add to GitLab.(/images/5a-Apply-Policy.PNG)
+Click on "filter" to quickly find your newly created policy. Select the correct policy and click next. Add tags if needed and review user details. If correct select create user. Keep this page open as you'll need security credentials of this user to add to GitLab. ![alt text](/images/5a-Apply-Policy.PNG)
 
 ## III. Setup GitLab Pipeline
 6. Add ECR User Credentials To GitLab
@@ -84,20 +86,20 @@ When working on changes it's best to work in a feature branch versus your main b
 ```
 git checkout -b feature/nginx
 ```
-This will create a new branch called feature/nginx. Verify which branch your in with the command below. "*" indicates the current directory. (/images/7b-feature-branch.PNG)
+This will create a new branch called feature/nginx. Verify which branch your in with the command below. "*" indicates the current directory. ![alt text](/images/7b-feature-branch.PNG)
 ```
 git branch 
 ```
 
 8. Create Nginx files
-Create a index.html and javascript.js page in Visual Code Editor. This simple current time app is simply an index.html page and javascript.js page. You can add whatever you want to those pages. Nginx comes with it's own index.html page that'll you'll need to override via a Dockerfile command. [from project2] (/index/javascript-time-code.PNG) (/index/simple-index-page.PNG) 
+Create a index.html and javascript.js page in Visual Code Editor. This simple current time app is simply an index.html page and javascript.js page. You can add whatever you want to those pages. Nginx comes with it's own index.html page that'll you'll need to override via a Dockerfile command. ![alt text](/index/javascript-time-code.PNG) ![alt text](/index/simple-index-page.PNG) 
 
-9. Create a Dockerfile and build the image. You'll see a success message if your build was completed correctly. Project2 (/image/docker-file-setup.PNG)
+9. Create a Dockerfile and build the image. You'll see a success message if your build was completed correctly. ![alt text](/image/docker-file-setup.PNG)
 
 ```
 docker build -t name_of_your_image .
 ```
-Project2 ![alt text](images/1-docker-success-msg.PNG)
+![alt text](images/1-docker-success-msg.PNG)
 
 10. Test Your Docker Image 
 ```
