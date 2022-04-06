@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CI/CD Project Using AWS, Terraform, GitLab, Docker, Linux"
-description: "Demonstration of application deployment using a CI/CD Pipeline"
+title: "aws-service-definitions"
+description: "AWS services used in a CI/CD Pipeline"
 tags: Projects
 ---
 
