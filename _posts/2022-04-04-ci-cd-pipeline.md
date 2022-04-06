@@ -33,7 +33,7 @@ In the example below, any branch ending in "release" will be protected. These se
 
 - a. **Create Protected Tags**
 Tags must also be protected. After setting a tag wildcard, you must limit access to whom gets to create and update tags. Protected tags can also be used to trigger pipeline activation. 
-<img src="/images/3a-protected-tags.PNG/" alt="create-protected-tags" width="500"/>
+<img src="/images/3a-protected-tags.PNG" alt="create-protected-tags" width="500"/>
 
 
 **4. Clone Project.**
@@ -45,14 +45,14 @@ This project involves using a light Nginx web server packaged into Docker image.
 
 - a. **Create a new registry in AWS ECR.**
 Sign-in to your AWS account and select ECR. Make sure you select the correct region, as ECR repository can be created in multiple locations. It's recommended to name your repository the same name as your project so that it's easier to recognize across your platforms. 
-<img src="/images/4-create-ecr-rep.PNG/" alt="create-ecr-rep" width="500"/>
+<img src="/images/4-create-ecr-rep.PNG" alt="create-ecr-rep" width="500"/>
 
 - b.** Setup IAM User for Pipeline.**
 This user will be used by GitLab to push images to the repository. 
 
 - c. **Create Policy**
 Create a policy to limit the amount of access the user has. This policy states the user who has this policy assigned to it will only be allowed to push images to the specific ECR repository you created earlier. Name the policy something descriptive so that you can easily recognize it later. Example: SimpleAppPushECR 
-<img src="/images/4-create-ecr-rep3.PNG/" alt="create-ecr-policy" width="400"/>
+<img src="/images/4-create-ecr-rep3.PNG" alt="create-ecr-policy" width="400"/>
 
 - d. **Create User**
 After you create the policy, you'll need a user to attach the policy to it. This computer based user only needs programmatic access. This means this user will never be able to log into the console. Name this user simple-app-ci or whatever reminds you this is a programmatic user only. ![alt text](/images/5-Create-User.PNG)
