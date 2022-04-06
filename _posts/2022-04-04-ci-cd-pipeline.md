@@ -1,5 +1,5 @@
 # Deploy a Simple Website using Nginx, GitLab, Docker, ECR
-The project documents the necessary steps need to launch a simple Nginx webpage using Docker, GitLab Pipelines, Nginx, and ECR. This automation will upload the Docker images to your ECR repository. 
+This project documents the necessary steps need to launch a Nginx webpage using Docker, GitLab Pipelines, Git, and ECR. This automation deploys the website from Docker then uploads the Docker image to an ECR repository. 
 
 # Contents
  - [Create Project in GitLab](#i-create-project-in-gitlab) 
@@ -14,7 +14,7 @@ Set the visibility level to public so your web app is visible to the public.
 <img src="/images/1-create-project-gitlab.PNG" alt="create-gitlab-project" width="500"/>
 
 **2. Change CI/CD Setting in GitLab.**
-Settings > General > Visibility, project features, permissions > Expand > CI/CD > Only Project Members
+Settings > General > Visibility, Project Features> Permissions > Expand > CI/CD > Only Project Members
 - a. **Make your CI/CD "Private" and "Only visible to members of the project".** By default all CI/CD pipeline logs are set to public. You should set them to private to prevent sensitive information (like your AWS secret key) from accidentally being displayed in logs.
 <img src="/images/2a-make-pipeline-private.PNG" alt="make-pipeline-private" width="500"/>
 
