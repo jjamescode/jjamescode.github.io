@@ -1,5 +1,5 @@
 # Deploy a Simple Website using Nginx, GitLab, Docker, ECR
-This project documents the necessary steps need to launch a Nginx webpage using Docker, GitLab Pipelines, Git, and ECR. This automation deploys the website from Docker then uploads the Docker image to an ECR repository. 
+This project documents the necessary steps needed to launch a Nginx webpage using Docker, GitLab Pipelines, Git, and ECR. This automation deploys the website from Docker then uploads the Docker image to an ECR repository. 
 
 # Contents
  - [Create Project in GitLab](#i-create-project-in-gitlab) 
