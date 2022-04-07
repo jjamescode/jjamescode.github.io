@@ -1,21 +1,10 @@
 ---
 layout: post
-title: "aws-service-definitions"
-description: "AWS services used in a CI/CD Pipeline"
-tags: Projects
+title: "Devop Tools and Definitions"
+description: "Devops has a lot of tools, here is a brief overview of them."
 ---
 
-# CI/CD Project Using AWS, Terraform, GitLab, Docker, Linux
-
-I chose this project to document the building of a CI/CD pipeline from start to end.
-
-## Scenario
-Launch a Django application that is scalable, secure, with zero downtime.
-
-## Diagram
-<img src="/images/pipeline-project.PNG" alt="project-overview" width="500px"/>
-
-## Tools Used
+# Different Devop tools and their uses.
 
 - **Terraform:** Tool used to define AWS services in one location as the Infrastructure as Code(IAC) which supports multiple platforms. 
 
@@ -54,5 +43,5 @@ A highly scalable and fast container management service used to manage your own 
 - **AWS Certificate Manager:**
 Used to manage and create certificates for secure https access. 
 
-I'll document process as I go.
+I'll document process as I explore each of them.
 
